@@ -210,10 +210,10 @@ cursor:pointer;
                   <li class="nav-item"><a class="nav-link" href="/guide.jsp">가이드</a></li>
                   <c:choose>
                   <c:when test="${loginID != null}">
-                  <li class="nav-item"><a class="nav-link" href="./ifPartyExists.party">MY퍼즐</a></li>
+                  <li class="nav-item"><a class="nav-link" href="/ifPartyExists.party">MY퍼즐</a></li>
                   </c:when>
                   <c:otherwise>
-                  <li class="nav-item"><a id="nopuzzle" class="nav-link">MY퍼즐</a></li>
+                  <li class="nav-item"><a id="nopuzzle" class="nav-link" href="./ifPartyExists.party">MY퍼즐</a></li>
                   </c:otherwise>
                   </c:choose>
                   <li class="nav-item"><a class="nav-link" href="/contents/main.jsp">포즐피디아</a></li>
@@ -254,14 +254,17 @@ cursor:pointer;
 <div id="con1">
    <div class="container" style="background-color: #121212;">
       <nav class="navbar navbar-expand navbar-light bg-light" style="background-color: #121212; padding: 0%; margin-bottom: 4%;">
-            <div class="container-fluid" style="width: 100%; background-color: #121212; padding-top: 100px; font-weight: 700;">
-                <a class="navbar-brand" href="/list.board?cpage=1" style="color: #ffffff; font-size: 40px; padding-left: 5%;">고객센터</a>
-                <div class="collapse navbar-collapse" id="navbarNav" style="margin-left: 3%;">
-                    <a class="nav-link active" aria-current="page"
-                     href="/list.board?cpage=1" style="color: #7A07EE; width: 50%;">공지사항</a>
+			<div class="container-fluid"
+               style="width: 100%; background-color: #121212; padding-top: 100px;">
+					<a class="navbar-brand" href="/list.board?cpage=1"
+						style="color: #ffffff; font-size: 40px; padding-left: 5%;">고객센터</a>
+               <div class="collapse navbar-collapse" id="navbarNav"
+                  style="margin-left: 3%;">
+                  <a class="nav-link active" aria-current="page"
+                     href="/list.board?cpage=1" style="color: #FFFFFF; width: 200px;">공지사항</a>
                   <a class="nav-link" href="/list.qnaboard?cpage=1"
-                     style="color: #FFFFFF; width: 50%;">문의</a>
-                </div>
+                     style="color: #AF59FF; width: 200px;">문의</a>
+               </div>
             </div>
         </nav>
         <form action="/save.qnaboard" method="post" id=inquiryform>

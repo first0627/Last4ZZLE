@@ -52,7 +52,11 @@
         <nav class="navbar sticky-top navbar-expand-lg navbar-dark" style="background-color: #0C0C0C; padding-top: 1%; padding-bottom: 1%;">
             <div class="container-fluid" style="background-color: #0C0C0C;">
                 <a class="navbar-brand" href="./index.jsp" style="background-color: #0C0C0C;">
+
                     <img src="./img/logo.png" href="./index.jsp"  alt="" width="200" style="margin-left: 12%; background-color: #0c0c0c;">
+
+               
+
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"

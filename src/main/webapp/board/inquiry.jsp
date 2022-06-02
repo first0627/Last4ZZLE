@@ -271,7 +271,7 @@ cursor:pointer;
             style="background-color: #121212; padding: 0%; margin-bottom: 4%; font-weight: 700;">
                <div class="collapse navbar-collapse" id="navbarNav">
                   <a class="nav-link active" aria-current="page"
-                     href="/list.board?cpage=1" style="color: #7A07EE; width: 50%;">공지사항</a>
+                     href="/list.board?cpage=1" style="color: #FFFFFF; width: 50%;">공지사항</a>
                   <a class="nav-link" href="/list.qnaboard?cpage=1"
                      style="color:#AF59FF;  width: 50%;">문의</a>
                </div>
