@@ -104,6 +104,7 @@ public class PartyController extends HttpServlet {
 				System.out.println(id + " " + ott);
 
 				if (ott.equals("netflix")) {
+					boolean netP = false;
 					int partySize = daoP.sizeSeq();
 					System.out.println("파티사이즈 " + partySize);
 					// int[] insertSeq = new int[partySize];
@@ -141,17 +142,22 @@ public class PartyController extends HttpServlet {
 								System.out.println("파티매칭중입니다.78");
 							}
 						} else if (daoP.isM1m2m3Exist(i + 1).getBoss() == null) {
-							String noParty = "noParty";
-							request.setAttribute("noParty", noParty);
-							request.getRequestDispatcher("./puzzle/startpuzzle.jsp").forward(request, response);
-							
+							netP = true;
+
 						}
-						
+
 					}
-					response.sendRedirect("/ifPartyExists.party");
+					if (netP) {
+
+						String noParty = "noParty";
+						request.setAttribute("noParty", noParty);
+						request.getRequestDispatcher("./puzzle/startpuzzle.jsp").forward(request, response);
+					} else {
+						response.sendRedirect("/ifPartyExists.party");
+					}
 					// 프론트에 뿌리
 				} else if (ott.equals("watcha")) {
-
+					boolean watP = false;
 					int partySize = daoW.sizeSeq();
 					System.out.println("파티사이즈 " + partySize);
 
@@ -187,17 +193,22 @@ public class PartyController extends HttpServlet {
 								System.out.println("파티매칭중입니다.78");
 							}
 						} else if (daoW.isM1m2m3Exist(i + 1).getBoss() == null) {
-							String noParty = "noParty";
-							request.setAttribute("noParty", noParty);
-							request.getRequestDispatcher("./puzzle/startpuzzle.jsp").forward(request, response);
-							
-						}
-						
-					}
-					response.sendRedirect("/ifPartyExists.party");
-					// 프론트에 뿌리
-				}else if (ott.equals("disney")) {
+							watP = true;
 
+						}
+
+					}
+					if (watP) {
+
+						String noParty = "noParty";
+						request.setAttribute("noParty", noParty);
+						request.getRequestDispatcher("./puzzle/startpuzzle.jsp").forward(request, response);
+					} else {
+						response.sendRedirect("/ifPartyExists.party");
+					}
+					// 프론트에 뿌리
+				} else if (ott.equals("disney")) {
+					boolean disP = false;
 					int partySize = daoD.sizeSeq();
 					System.out.println("파티사이즈 " + partySize);
 
@@ -233,17 +244,22 @@ public class PartyController extends HttpServlet {
 								System.out.println("파티매칭중입니다.78");
 							}
 						} else if (daoD.isM1m2m3Exist(i + 1).getBoss() == null) {
-							String noParty = "noParty";
-							request.setAttribute("noParty", noParty);
-							request.getRequestDispatcher("./puzzle/startpuzzle.jsp").forward(request, response);
-							
+							disP = true;
+
 						}
-						
+
 					}
-					response.sendRedirect("/ifPartyExists.party");
+					if (disP) {
+
+						String noParty = "noParty";
+						request.setAttribute("noParty", noParty);
+						request.getRequestDispatcher("./puzzle/startpuzzle.jsp").forward(request, response);
+					} else {
+						response.sendRedirect("/ifPartyExists.party");
+					}
 					// 프론트에 뿌리
 				} else if (ott.equals("tving")) {
-
+					boolean tvP = false;
 					int partySize = daoT.sizeSeq();
 					System.out.println("파티사이즈 " + partySize);
 
@@ -279,14 +295,19 @@ public class PartyController extends HttpServlet {
 								System.out.println("파티매칭중입니다.78");
 							}
 						} else if (daoT.isM1m2m3Exist(i + 1).getBoss() == null) {
-							String noParty = "noParty";
-							request.setAttribute("noParty", noParty);
-							request.getRequestDispatcher("./puzzle/startpuzzle.jsp").forward(request, response);
-							
+							tvP = true;
+
 						}
-						
+
 					}
-					response.sendRedirect("/ifPartyExists.party");
+					if (tvP) {
+
+						String noParty = "noParty";
+						request.setAttribute("noParty", noParty);
+						request.getRequestDispatcher("./puzzle/startpuzzle.jsp").forward(request, response);
+					} else {
+						response.sendRedirect("/ifPartyExists.party");
+					}
 					// 프론트에 뿌리
 				}
 			} else if (uri.equals("out.party")) {

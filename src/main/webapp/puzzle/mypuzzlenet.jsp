@@ -596,9 +596,9 @@ a:hover {
 								<div class="infoname">PW</div>
 								<div class="infodetail">${dtoPB1.ottpw}${dtoPB2.ottpw}</div>
 							</div>
-							<div align=right style="color: #7A07EE; margin-top: 10px;">
-								<a href="https://www.netflix.com/kr/">넷플릭스 바로가기 <img
-									style="width: 16px; height: 16px; margin-bottom: 3px;"
+							<div align=right style="color: #A959FF; margin-top: 10px;">
+								<a href="https://www.netflix.com/kr/" style="color: #A959FF;">넷플릭스 바로가기 <img
+									style="width: 16px; height: 16px; color: #A959FF; margin-bottom: 3px "
 									src="/img/arr.png"></a>
 							</div>
 						</div>

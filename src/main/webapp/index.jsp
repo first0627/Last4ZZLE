@@ -591,10 +591,10 @@ nav {
 							<a class="nav-link" href="/ifPartyExists.party"><button
 									class="bigbtn">서비스 시작하기</button></a>
 						</c:when>
-						<c:otherwise>
+						<%-- <c:otherwise>
 							<a id="nopuzzle" class="nav-link" style="padding: 0px;"><button
 									class="bigbtn">서비스 시작하기</button></a>
-						</c:otherwise>
+						</c:otherwise> --%>
 					</c:choose>
 				</div>
 			</div>

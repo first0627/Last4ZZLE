@@ -598,8 +598,8 @@ a:hover {
 								<div class="infoname">PW</div>
 								<div class="infodetail">${dtoPB1.ottpw}${dtoPB2.ottpw}</div>
 							</div>
-							<div align=right style="color: #7A07EE; margin-top: 10px;">
-								<a href="https://watcha.com/browse/video">왓챠 바로가기 <img
+							<div align=right style="color: #A959FF; margin-top: 10px;">
+								<a href="https://watcha.com/browse/video" style="color: #A959FF;">왓챠 바로가기 <img
 									style="width: 16px; height: 16px; margin-bottom: 3px;"
 									src="/img/arr.png"></a>
 							</div>

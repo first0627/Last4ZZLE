@@ -599,8 +599,8 @@ margin-top:55px;
 								<div class="infoname">PW</div>
 								<div class="infodetail">${dtoPB1.ottpw}${dtoPB2.ottpw}</div>
 							</div>
-							<div align=right style="color: #7A07EE; margin-top: 10px;">
-								<a href="https://www.disneyplus.com/ko-kr/welcome/stream-now">디즈니 플러스 바로가기 <img
+							<div align=right style=" margin-top: 10px;">
+								<a href="https://www.disneyplus.com/ko-kr/welcome/stream-now" style="color: #A959FF;">디즈니 플러스 바로가기 <img
 									style="width: 16px; height: 16px; margin-bottom: 3px;"
 									src="/img/arr.png"></a>
 							</div>

@@ -168,11 +168,7 @@ nav {
 </style>
 </head>
 <body>
-	<c:choose>
-		<c:when test="${noParty eq 'noParty'}">
-		  <input type = hidden id = "noParty" value = "noParty">
-		</c:when>
-	</c:choose>
+	
 	<nav class="navbar navbar-expand-md navbar-dark fixed-top">
 		<div class="container">
 			<a class="navbar-brand" href="/index.jsp" id=logo><img
@@ -293,6 +289,11 @@ nav {
 			</div>
 		</div>
 	</div>
+	<c:choose>
+		<c:when test="${noParty eq 'noParty'}">
+		  <input type = hidden id = "noParty" value = "noParty" style = "width :0.5px; height :0.5px;">
+		</c:when>
+	</c:choose>
 </body>
 <script>
 	let val = $("#noParty").val();
@@ -302,11 +303,11 @@ if ($('#noParty').val() == 'noParty'){
           background: '#121212',
           html: "퍼즐이 생성되어 있지 않습니다. 퍼즐장으로 퍼즐을 만들어보세요!",
           color: '#ededed',
-          showCancelButton: true,
+          showCancelButton: false,
           confirmButtonColor: '#7a07ee',
-          cancelButtonColor: '#999999',
+   /*        cancelButtonColor: '#999999', */
           confirmButtonText: '확인',
-          cancelButtonText: '취소',
+      
       }).then((result) => {
           if (result.isConfirmed) {
        	Location.reload();  

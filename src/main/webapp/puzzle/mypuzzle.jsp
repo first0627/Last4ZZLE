@@ -554,7 +554,7 @@ nav {
 
 
 				<div class="ott" style = "background-color : 
- #949494;">
+ #495057;">
 					<div class="left">
 						<img src="/img/puzzle2.png" style="width: 80px; height: 70px;">
 					</div>
