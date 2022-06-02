@@ -231,12 +231,10 @@ cursor:pointer;
 									<ul class="dropdown-menu"
 										aria-labelledby="navbarDropdownMenuLink"
 										style="background-color: #121212;">
-										<c:choose>
-										<c:when test="${kakao == null}">
+							
 										<li><a class="dropdown-item" id = "mypage" href="/myPage.member"
 											style="color: #EDEDED;">마이페이지</a></li>
-										</c:when>
-										</c:choose>
+								
 										<li><a id="logout" class="dropdown-item" href="/logout.member"
 											style="color: #EDEDED;">로그아웃</a></li>
 									</ul></li>

@@ -140,7 +140,7 @@ public class PartyController extends HttpServlet {
 							} else {
 								System.out.println("파티매칭중입니다.78");
 							}
-						} else {
+						} else if(daoP.isM1m2m3Exist(i + 1).getBoss() == null) {
 							response.setContentType("text/html; charset=UTF-8");
 
 							PrintWriter writer = response.getWriter();
@@ -150,8 +150,8 @@ public class PartyController extends HttpServlet {
 
 							writer.close();
 
-						}
-						
+					
+					}
 					}
 					response.sendRedirect("/ifPartyExists.party");
 					// 프론트에 뿌리
@@ -191,7 +191,7 @@ public class PartyController extends HttpServlet {
 							} else {
 								System.out.println("파티매칭중입니다.78");
 							}
-						} else {
+						} else if(daoP.isM1m2m3Exist(i + 1).getBoss() == null) {
 							response.setContentType("text/html; charset=UTF-8");
 
 							PrintWriter writer = response.getWriter();
@@ -201,7 +201,7 @@ public class PartyController extends HttpServlet {
 
 							writer.close();
 						}
-
+					
 					}
 					response.sendRedirect("/ifPartyExists.party");
 
@@ -241,17 +241,16 @@ public class PartyController extends HttpServlet {
 							} else {
 								System.out.println("파티매칭중입니다.78");
 							}
-						} else {
+						} else if(daoP.isM1m2m3Exist(i + 1).getBoss() == null) {
 							response.setContentType("text/html; charset=UTF-8");
 
 							PrintWriter writer = response.getWriter();
 							String PageUrl = "./puzzle/startpuzzle.jsp";
 							writer.println("<script>alert('현재 모집중인 퍼즐이 없습니다. 퍼즐장으로 시작해보세요!'); location.href='" + PageUrl
 									+ "';</script>");
-
 							writer.close();
 						}
-
+					
 					}
 					response.sendRedirect("/ifPartyExists.party");
 
@@ -291,7 +290,7 @@ public class PartyController extends HttpServlet {
 							} else {
 								System.out.println("파티매칭중입니다.78");
 							}
-						} else {
+						}else if(daoP.isM1m2m3Exist(i + 1).getBoss() == null) {
 							response.setContentType("text/html; charset=UTF-8");
 
 							PrintWriter writer = response.getWriter();
@@ -312,13 +311,13 @@ public class PartyController extends HttpServlet {
 //
 //							writer.close();
 						}
-
+					
 					}
 					response.sendRedirect("/ifPartyExists.party");
 				}
-			}
+			
 
-			else if (uri.equals("out.party")) {
+			}else if (uri.equals("out.party")) {
 				String id = (String) request.getSession().getAttribute("loginID");
 				String ott = request.getParameter("ott");
 
