@@ -150,7 +150,7 @@ a {
 }
 
 a:hover {
-   color: #7A07EE;
+   color:#AF59FF; 
 }
 
 .btn {
@@ -260,7 +260,7 @@ cursor:pointer;
                   <a class="nav-link active" aria-current="page"
                      href="/list.board?cpage=1" style="color: #FFFFFF; width: 200px;">공지사항</a>
                   <a class="nav-link" href="/list.qnaboard?cpage=1"
-                     style="color: #7A07EE; width: 200px;">문의</a>
+                     style="color: #AF59FF; width: 200px;">문의</a>
                </div>
             </div>
          </nav>
@@ -273,7 +273,7 @@ cursor:pointer;
                   <a class="nav-link active" aria-current="page"
                      href="/list.board?cpage=1" style="color: #7A07EE; width: 50%;">공지사항</a>
                   <a class="nav-link" href="/list.qnaboard?cpage=1"
-                     style="color: #FFFFFF; width: 50%;">문의</a>
+                     style="color:#AF59FF;  width: 50%;">문의</a>
                </div>
          </nav>
       </div>
