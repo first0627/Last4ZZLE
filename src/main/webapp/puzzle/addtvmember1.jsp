@@ -97,7 +97,7 @@
     $("#next").on("click", function () {
         Swal.fire({
             background: '#121212',
-            html: "디즈니 플러 퍼즐원으로 매칭을 시작합니다.<br>매칭이 완료되면 MY퍼즐에서 확인 가능해요!",
+            html: "tving 퍼즐원으로 매칭을 시작합니다.<br>매칭이 완료되면 MY퍼즐에서 확인 가능해요!",
             color: '#ededed',
             showCancelButton: true,
             confirmButtonColor: '#7a07ee',

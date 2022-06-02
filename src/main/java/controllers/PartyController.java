@@ -141,19 +141,19 @@ public class PartyController extends HttpServlet {
 								System.out.println("파티매칭중입니다.78");
 							}
 						} else {
-							System.out.println("파티 매칭중입니다.9");
+							response.setContentType("text/html; charset=UTF-8");
+
+							PrintWriter writer = response.getWriter();
+							String PageUrl = "./puzzle/startpuzzle.jsp";
+							writer.println("<script>alert('현재 모집중인 퍼즐이 없습니다. 퍼즐장으로 시작해보세요!'); location.href='" + PageUrl
+									+ "';</script>");
+
+							writer.close();
+
 						}
-
+						
 					}
-					response.setContentType("text/html; charset=UTF-8");
-
-					PrintWriter writer = response.getWriter();
-					String PageUrl = "./puzzle/startpuzzle.jsp";
-					writer.println(
-							"<script>alert('현재 모집중인 퍼즐이 없습니다. 퍼즐장으로 시작해보세요!'); location.href='" + PageUrl + "';</script>");
-
-					writer.close();
-
+					response.sendRedirect("/ifPartyExists.party");
 					// 프론트에 뿌리
 				} else if (ott.equals("watcha")) {
 
@@ -192,18 +192,18 @@ public class PartyController extends HttpServlet {
 								System.out.println("파티매칭중입니다.78");
 							}
 						} else {
-							System.out.println("파티 매칭중입니다.9");
+							response.setContentType("text/html; charset=UTF-8");
+
+							PrintWriter writer = response.getWriter();
+							String PageUrl = "./puzzle/startpuzzle.jsp";
+							writer.println("<script>alert('현재 모집중인 퍼즐이 없습니다. 퍼즐장으로 시작해보세요!'); location.href='" + PageUrl
+									+ "';</script>");
+
+							writer.close();
 						}
 
 					}
-					response.setContentType("text/html; charset=UTF-8");
-
-					PrintWriter writer = response.getWriter();
-					String PageUrl = "./puzzle/startpuzzle.jsp";
-					writer.println(
-							"<script>alert('현재 모집중인 퍼즐이 없습니다. 퍼즐장으로 시작해보세요!'); location.href='" + PageUrl + "';</script>");
-
-					writer.close();
+					response.sendRedirect("/ifPartyExists.party");
 
 				} else if (ott.equals("disney")) {
 
@@ -242,18 +242,18 @@ public class PartyController extends HttpServlet {
 								System.out.println("파티매칭중입니다.78");
 							}
 						} else {
-							System.out.println("파티 매칭중입니다.9");
+							response.setContentType("text/html; charset=UTF-8");
+
+							PrintWriter writer = response.getWriter();
+							String PageUrl = "./puzzle/startpuzzle.jsp";
+							writer.println("<script>alert('현재 모집중인 퍼즐이 없습니다. 퍼즐장으로 시작해보세요!'); location.href='" + PageUrl
+									+ "';</script>");
+
+							writer.close();
 						}
 
 					}
-					response.setContentType("text/html; charset=UTF-8");
-
-					PrintWriter writer = response.getWriter();
-					String PageUrl = "./puzzle/startpuzzle.jsp";
-					writer.println(
-							"<script>alert('현재 모집중인 퍼즐이 없습니다. 퍼즐장으로 시작해보세요!'); location.href='" + PageUrl + "';</script>");
-
-					writer.close();
+					response.sendRedirect("/ifPartyExists.party");
 
 				} else if (ott.equals("tving")) {
 
@@ -292,19 +292,29 @@ public class PartyController extends HttpServlet {
 								System.out.println("파티매칭중입니다.78");
 							}
 						} else {
-							System.out.println("파티 매칭중입니다.9");
+							response.setContentType("text/html; charset=UTF-8");
+
+							PrintWriter writer = response.getWriter();
+							String PageUrl = "./puzzle/startpuzzle.jsp";
+							writer.println("<script>alert('현재 모집중인 퍼즐이 없습니다. 퍼즐장으로 시작해보세요!'); location.href='" + PageUrl
+									+ "';</script>");
+
+							writer.close();
+							
+							
+//							response.setContentType("text/html; charset=UTF-8");
+//							PrintWriter writer = response.getWriter();
+//							String PageUrl = "./puzzle/startpuzzle.jsp";
+//							writer.println("<script src=\"//cdn.jsdelivr.net/npm/sweetalert2@11\"></script>");
+//							writer.println("<script src=\"sweetalert2/dist/sweetalert2.min.js\"></script>");
+//						
+//							writer.println("<script> Swal.fire({background: '#121212',html:"+"정말 탈퇴하시겠어요..?"+", color: '#ededed',showCancelButton: true,confirmButtonColor: '#7a07ee',cancelButtonColor: '#999999', confirmButtonText: '확인', cancelButtonText: '취소', }).then((result) => {if (result.isConfirmed) {location.href='"+PageUrl+"'}else {return false;} })</script>");
+//
+//							writer.close();
 						}
 
 					}
-					response.setContentType("text/html; charset=UTF-8");
-
-					PrintWriter writer = response.getWriter();
-					String PageUrl = "./puzzle/startpuzzle.jsp";
-					writer.println(
-							"<script>alert('현재 모집중인 퍼즐이 없습니다. 퍼즐장으로 시작해보세요!'); location.href='" + PageUrl + "';</script>");
-
-					writer.close();
-
+					response.sendRedirect("/ifPartyExists.party");
 				}
 			}
 
