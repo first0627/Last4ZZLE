@@ -126,7 +126,7 @@ $("#next").on("click", function () {
 	else{
    Swal.fire({
        background: '#121212',
-       html: "넷플릭스 퍼즐장으로 매칭을 시작합니다.<br>매칭이 완료되면 MY퍼즐에서 확인 가능해요!",
+       html: "티빙 퍼즐장으로 매칭을 시작합니다.<br>매칭이 완료되면 MY퍼즐에서 확인 가능해요!",
        color: '#ededed',
        showCancelButton: true,
        confirmButtonColor: '#7a07ee',

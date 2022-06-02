@@ -198,7 +198,7 @@ nav {
 <body>
 	<nav class="navbar navbar-expand-md navbar-dark fixed-top">
 		<div class="container">
-			<a class="navbar-brand" href="#" id=logo><img
+			<a class="navbar-brand" href="index.jsp" id=logo><img
 				src="/img/logo2.png"></a>
 			<button class="navbar-toggler" type="button"
 				data-bs-toggle="collapse" data-bs-target="#navbarCollapse"

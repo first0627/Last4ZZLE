@@ -311,7 +311,7 @@ nav {
 
 										<div class="top">넷플릭스 퍼즐</div>
 
-										<div class="bottom">${member}으로이용중</div>
+										<div class="bottom">${member}으로 이용중</div>
 
 									</div>
 									<div class="right">
@@ -344,7 +344,7 @@ nav {
 
 										<div class="top">넷플릭스 퍼즐</div>
 
-										<div class="bottom">${boss}으로이용중</div>
+										<div class="bottom">${boss}으로 이용중</div>
 
 									</div>
 									<div class="right">
@@ -379,7 +379,7 @@ nav {
 
 										<div class="top">왓챠 퍼즐</div>
 
-										<div class="bottom">${member}으로이용중</div>
+										<div class="bottom">${member}으로 이용중</div>
 
 
 									</div>
@@ -405,7 +405,7 @@ nav {
 									</div>
 									<div class="center">
 										<div class="top">왓챠 퍼즐</div>
-										<div class="bottom">${boss}으로이용중</div>
+										<div class="bottom">${boss}으로 이용중</div>
 
 									</div>
 									<div class="right">
@@ -440,7 +440,7 @@ nav {
 
 										<div class="top">티빙 퍼즐</div>
 
-										<div class="bottom">${member}으로이용중</div>
+										<div class="bottom">${member}으로 이용중</div>
 
 									</div>
 									<div class="right">
@@ -469,7 +469,7 @@ nav {
 
 										<div class="top">티빙 퍼즐</div>
 
-										<div class="bottom">${boss}으로이용중</div>
+										<div class="bottom">${boss}으로 이용중</div>
 
 									</div>
 									<div class="right">
@@ -501,7 +501,7 @@ nav {
 
 										<div class="top">디즈니 퍼즐</div>
 
-										<div class="bottom">${member}으로이용중</div>
+										<div class="bottom">${member}으로 이용중</div>
 
 
 									</div>
@@ -531,7 +531,7 @@ nav {
 
 										<div class="top">디즈니 퍼즐</div>
 
-										<div class="bottom">${boss}으로이용중</div>
+										<div class="bottom">${boss}으로 이용중</div>
 
 
 									</div>
@@ -550,9 +550,11 @@ nav {
 
 
 
+ 
 
 
-				<div class="ott" style = "background-color : #495057;">
+				<div class="ott" style = "background-color : 
+ #949494;">
 					<div class="left">
 						<img src="/img/puzzle2.png" style="width: 80px; height: 70px;">
 					</div>

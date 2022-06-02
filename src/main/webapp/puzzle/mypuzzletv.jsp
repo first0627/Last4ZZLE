@@ -673,6 +673,24 @@ a:hover {
 			
 		</div>
 	</div>
+<div class="col-12 d-none d-md-block">
+		<div id="con5" align=center>
+			<div class="container">
+				<div class="row">
+					<div class="col-6" id="footer1" align=left>
+						<img src="/img/group30.png">
+					</div>
+					<div class="col-1" id="footer2">이용약관</div>
+					<div class="col-2" id="footer2">개인정보 처리방침</div>
+					<div class="col-1" id="footer2">
+						<a href="/list.qnaboard?cpage=1"
+							style="text-decoration: none; color: white;">1:1 문의</a>
+					</div>
+					<div class="col-2" id="footer3">©2022 Fozzle, Inc.</div>
+				</div>
+			</div>
+		</div>
+	</div>
 	<div class="col-12 d-block d-md-none">
 		<div id="con5" align=center>
 			<div class="container">

@@ -140,18 +140,13 @@ public class PartyController extends HttpServlet {
 							} else {
 								System.out.println("파티매칭중입니다.78");
 							}
-						} else if(daoP.isM1m2m3Exist(i + 1).getBoss() == null) {
-							response.setContentType("text/html; charset=UTF-8");
-
-							PrintWriter writer = response.getWriter();
-							String PageUrl = "./puzzle/startpuzzle.jsp";
-							writer.println("<script>alert('현재 모집중인 퍼즐이 없습니다. 퍼즐장으로 시작해보세요!'); location.href='" + PageUrl
-									+ "';</script>");
-
-							writer.close();
-
-					
-					}
+						} else if (daoP.isM1m2m3Exist(i + 1).getBoss() == null) {
+							String noParty = "noParty";
+							request.setAttribute("noParty", noParty);
+							request.getRequestDispatcher("./puzzle/startpuzzle.jsp").forward(request, response);
+							
+						}
+						
 					}
 					response.sendRedirect("/ifPartyExists.party");
 					// 프론트에 뿌리
@@ -191,21 +186,17 @@ public class PartyController extends HttpServlet {
 							} else {
 								System.out.println("파티매칭중입니다.78");
 							}
-						} else if(daoP.isM1m2m3Exist(i + 1).getBoss() == null) {
-							response.setContentType("text/html; charset=UTF-8");
-
-							PrintWriter writer = response.getWriter();
-							String PageUrl = "./puzzle/startpuzzle.jsp";
-							writer.println("<script>alert('현재 모집중인 퍼즐이 없습니다. 퍼즐장으로 시작해보세요!'); location.href='" + PageUrl
-									+ "';</script>");
-
-							writer.close();
+						} else if (daoW.isM1m2m3Exist(i + 1).getBoss() == null) {
+							String noParty = "noParty";
+							request.setAttribute("noParty", noParty);
+							request.getRequestDispatcher("./puzzle/startpuzzle.jsp").forward(request, response);
+							
 						}
-					
+						
 					}
 					response.sendRedirect("/ifPartyExists.party");
-
-				} else if (ott.equals("disney")) {
+					// 프론트에 뿌리
+				}else if (ott.equals("disney")) {
 
 					int partySize = daoD.sizeSeq();
 					System.out.println("파티사이즈 " + partySize);
@@ -241,19 +232,16 @@ public class PartyController extends HttpServlet {
 							} else {
 								System.out.println("파티매칭중입니다.78");
 							}
-						} else if(daoP.isM1m2m3Exist(i + 1).getBoss() == null) {
-							response.setContentType("text/html; charset=UTF-8");
-
-							PrintWriter writer = response.getWriter();
-							String PageUrl = "./puzzle/startpuzzle.jsp";
-							writer.println("<script>alert('현재 모집중인 퍼즐이 없습니다. 퍼즐장으로 시작해보세요!'); location.href='" + PageUrl
-									+ "';</script>");
-							writer.close();
+						} else if (daoD.isM1m2m3Exist(i + 1).getBoss() == null) {
+							String noParty = "noParty";
+							request.setAttribute("noParty", noParty);
+							request.getRequestDispatcher("./puzzle/startpuzzle.jsp").forward(request, response);
+							
 						}
-					
+						
 					}
 					response.sendRedirect("/ifPartyExists.party");
-
+					// 프론트에 뿌리
 				} else if (ott.equals("tving")) {
 
 					int partySize = daoT.sizeSeq();
@@ -290,34 +278,18 @@ public class PartyController extends HttpServlet {
 							} else {
 								System.out.println("파티매칭중입니다.78");
 							}
-						}else if(daoP.isM1m2m3Exist(i + 1).getBoss() == null) {
-							response.setContentType("text/html; charset=UTF-8");
-
-							PrintWriter writer = response.getWriter();
-							String PageUrl = "./puzzle/startpuzzle.jsp";
-							writer.println("<script>alert('현재 모집중인 퍼즐이 없습니다. 퍼즐장으로 시작해보세요!'); location.href='" + PageUrl
-									+ "';</script>");
-
-							writer.close();
+						} else if (daoT.isM1m2m3Exist(i + 1).getBoss() == null) {
+							String noParty = "noParty";
+							request.setAttribute("noParty", noParty);
+							request.getRequestDispatcher("./puzzle/startpuzzle.jsp").forward(request, response);
 							
-							
-//							response.setContentType("text/html; charset=UTF-8");
-//							PrintWriter writer = response.getWriter();
-//							String PageUrl = "./puzzle/startpuzzle.jsp";
-//							writer.println("<script src=\"//cdn.jsdelivr.net/npm/sweetalert2@11\"></script>");
-//							writer.println("<script src=\"sweetalert2/dist/sweetalert2.min.js\"></script>");
-//						
-//							writer.println("<script> Swal.fire({background: '#121212',html:"+"정말 탈퇴하시겠어요..?"+", color: '#ededed',showCancelButton: true,confirmButtonColor: '#7a07ee',cancelButtonColor: '#999999', confirmButtonText: '확인', cancelButtonText: '취소', }).then((result) => {if (result.isConfirmed) {location.href='"+PageUrl+"'}else {return false;} })</script>");
-//
-//							writer.close();
 						}
-					
+						
 					}
 					response.sendRedirect("/ifPartyExists.party");
+					// 프론트에 뿌리
 				}
-			
-
-			}else if (uri.equals("out.party")) {
+			} else if (uri.equals("out.party")) {
 				String id = (String) request.getSession().getAttribute("loginID");
 				String ott = request.getParameter("ott");
 
