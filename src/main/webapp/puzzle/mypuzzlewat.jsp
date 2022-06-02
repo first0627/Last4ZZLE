@@ -437,7 +437,7 @@ a:hover {
 					<div class="topr" align=left>
 						<div style="height: 55%; font-size: 22px; padding-top: 5px;">왓챠
 							프리미엄 파티</div>
-						<div style="height: 45%;">${boss}${member}으로이용중으로이용중</div>
+						<div style="height: 45%;">${boss}${member}으로 이용중</div>
 					</div>
 				</div>
 

@@ -76,7 +76,7 @@ button {
    flex-direction: row;
    padding: 16px 60px 17px;
    gap: 10px;
-   width: 280px;
+   width: 290px;
    height: 68px;
    top: 488px;
    background: #7A07EE;

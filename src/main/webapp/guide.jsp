@@ -80,7 +80,7 @@ margin-top:60px;
 
 #main4 {
 margin-top:160px;
-width: 408px;
+width: 430px;
 height: 52px;
 
 font-family: 'Noto Sans KR';
