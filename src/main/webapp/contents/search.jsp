@@ -378,7 +378,7 @@ margin-left:6px;
 	<div class="container">
 	<form method="get" action="/searchResult.contents" id="searchform">
 				<div id="main1" align=center style="display:absolute;">
-				<input name="search" id="id" type="text" placeholder="작품명을 검색해보세요." style="padding-left:10px; color:white; font-size:16px; border-radius: 3px; border: 1px solid #878787; background-color: white; width: 400px; height:50px;">
+				<input name="search" id="id" type="text" placeholder="작품명을 검색해보세요." style="padding-left:10px; text-color:#000000; font-size:16px; border-radius: 3px; border: 1px solid #878787; background-color: #EEEEEE; width: 400px; height:50px;">
           		<input type="image" id="letssearch" src="/img/searchgo.png" style="position:absolute; width:38px; height:38px; margin-top: 16px; margin-left:15px;">
 				</div>
 				</form>
