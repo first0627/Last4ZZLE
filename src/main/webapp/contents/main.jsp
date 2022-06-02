@@ -344,7 +344,7 @@ margin-left:6px;
 						<li class="nav-item"><a id="nopuzzle" class="nav-link">MY퍼즐</a></li>
 						</c:otherwise>
 						</c:choose>
-						<li class="nav-item"><a class="nav-link" href="/contents/main.jsp">포즐피디아</a></li>
+						<li class="nav-item"><a class="nav-link active" href="/contents/main.jsp">포즐피디아</a></li>
 
 					</ol>
 					<ol class="nav-pills navbar-nav w-100 justify-content-end centered" id=po>

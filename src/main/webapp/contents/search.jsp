@@ -383,7 +383,17 @@ margin-left:6px;
 				</div>
 				</form>
 				<div id="main3" align=center style="margin-top:100px;">	
+				
+				<!-- 검색 결과 유무 -->
+				<c:choose>
+				<c:when test="${list[0].img != null}">
 				<span style="font-weight:700; font-size:22px;">검색 결과</span>
+				</c:when>
+				<c:otherwise>
+				<span style="font-weight:700; font-size:22px;">검색 결과가 없습니다.</span>
+				</c:otherwise>
+				</c:choose>
+				
 				<div class="row" style="padding-top:20px;">
 				<c:forEach var="i" items="${list}">
 				<div class="col-4 col-md-3 p-1">
