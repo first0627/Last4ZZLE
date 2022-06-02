@@ -195,7 +195,7 @@ nav {
 				</button>
 				<div class="collapse navbar-collapse" id="navbarCollapse">
 					<ol class="navbar-nav centered">
-						<li class="nav-item"><a class="nav-link active"
+						<li class="nav-item"><a class="nav-link"
 							aria-current="page" href="/index.jsp">홈</a></li>
 						<li class="nav-item"><a class="nav-link" href="/guide.jsp">가이드</a></li>
 						<c:choose>
@@ -210,7 +210,7 @@ nav {
 
 					</ol>
 					<ol class="nav-pills navbar-nav w-100 justify-content-end centered" id=po>
-						<li class="nav-item"><a class="nav-link" aria-current="page" href="/list.board?cpage=1">고객센터</a></li>
+						<li class="nav-item"><a class="nav-link active" aria-current="page" href="/list.board?cpage=1" style="background-color:inherit;">고객센터</a></li>
 						<c:choose>
 						<c:when test="${loginID != null}">
                         <li class="nav-item dropdown"><a
