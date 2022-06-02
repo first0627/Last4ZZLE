@@ -299,6 +299,7 @@ nav {
 					
 
 
+<<<<<<< HEAD
 					<c:choose>
                         <c:when test="${tving != 'tving'}">
                         <div class="col-12 col-md-6 col-xl-3">
@@ -306,6 +307,17 @@ nav {
                         </div>
                         </c:when>
                      </c:choose>
+=======
+						
+							<c:choose>
+								<c:when test="${tving != 'tving'}">
+									<div class="col-12 col-md-6 col-xl-3">
+									<img class="hover" id="p3" src="/img/ott3.png" alt="">
+										</div>
+								</c:when>
+				</c:choose>
+						
+>>>>>>> 7e30aadef3bb19a111f3492e5f00ab2b0fafad9d
 
 
 
