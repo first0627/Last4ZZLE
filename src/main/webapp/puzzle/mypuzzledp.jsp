@@ -159,6 +159,10 @@ nav {
 	background-color: #222222;
 	margin-bottom: 2%;
 }
+.personbottom {
+   height: 35%;
+   word-break:break-all;
+}
 
 .info {
 	width: 70%;

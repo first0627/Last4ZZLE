@@ -211,8 +211,10 @@ nav {
 					<li class="nav-item"><a class="nav-link" aria-current="page"
 						href="/index.jsp">홈</a></li>
 					<li class="nav-item"><a class="nav-link" href="/guide.jsp">가이드</a></li>
-					<li class="nav-item"><a class="nav-link active" href="/ifPartyExists.party">MY퍼즐</a></li>
-					<li class="nav-item"><a class="nav-link" href="/contents/main.jsp">포즐피디아</a></li>
+					<li class="nav-item"><a class="nav-link active"
+						href="/ifPartyExists.party">MY퍼즐</a></li>
+					<li class="nav-item"><a class="nav-link"
+						href="/contents/main.jsp">포즐피디아</a></li>
 
 				</ol>
 				<ol class="nav-pills navbar-nav w-100 justify-content-end centered"
@@ -258,7 +260,7 @@ nav {
 				</div>
 				<div class="container">
 					<div class="row" align=center style="margin-bottom: 5%;">
-<%-- 
+						<%-- 
 						<c:forEach var="dtoM" items="${dtoM}">
 
 							<c:choose>
@@ -272,59 +274,59 @@ nav {
 						</c:forEach>
  --%>
 
-						
-							<c:choose>
-								<c:when test="${netflix != 'netflix'}">
-									<div class="col-12 col-md-6 col-xl-3">
-										<img class="hover" id="p1" src="/img/ott1.png" alt="">
-									</div>
-								</c:when>
-							</c:choose>
-					
+
+						<c:choose>
+							<c:when test="${netflix != 'netflix'}">
+								<div class="col-12 col-md-6 col-xl-3">
+									<img class="hover" id="p1" src="/img/ott1.png" alt="">
+								</div>
+							</c:when>
+						</c:choose>
 
 
 
-						
-							<c:choose>
-								<c:when test="${watcha != 'watcha'}">
-									<div class="col-12 col-md-6 col-xl-3">
-										<img class="hover" id="p2" src="/img/ott2.png" alt="">
-									</div>
-								</c:when>
-							</c:choose>
-						
 
 
-				
-					
+						<c:choose>
+							<c:when test="${watcha != 'watcha'}">
+								<div class="col-12 col-md-6 col-xl-3">
+									<img class="hover" id="p2" src="/img/ott2.png" alt="">
+								</div>
+							</c:when>
+						</c:choose>
 
 
-						
-							<c:choose>
-								<c:when test="${tving != 'tving'}">
-									<div class="col-12 col-md-6 col-xl-3">
+
+
+
+
+
+
+						<c:choose>
+							<c:when test="${tving != 'tving'}">
+								<div class="col-12 col-md-6 col-xl-3">
 									<img class="hover" id="p3" src="/img/ott3.png" alt="">
-										</div>
-								</c:when>
-				</c:choose>
-						
+								</div>
+							</c:when>
+						</c:choose>
 
 
 
 
 
-					
 
 
-		
-							<c:choose>
-								<c:when test="${disney != 'disney'}">
-									<div class="col-12 col-md-6 col-xl-3">
-										<img class="hover" id="p4" src="/img/ott4.png" alt="">
-									</div>
-								</c:when>
-							</c:choose>
-			
+
+
+
+						<c:choose>
+							<c:when test="${disney != 'disney'}">
+								<div class="col-12 col-md-6 col-xl-3">
+									<img class="hover" id="p4" src="/img/ott4.png" alt="">
+								</div>
+							</c:when>
+						</c:choose>
+
 
 
 
