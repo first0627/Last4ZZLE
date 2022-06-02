@@ -95,22 +95,48 @@
 <script>
     
 $("#next").on("click", function () {
-    Swal.fire({
-        background: '#121212',
-        html: "디즈니 플러스 퍼즐장으로 매칭을 시작합니다.<br>매칭이 완료되면 MY퍼즐에서 확인 가능해요!",
-        color: '#ededed',
-        showCancelButton: true,
-        confirmButtonColor: '#7a07ee',
-        cancelButtonColor: '#999999',
-        confirmButtonText: '확인',
-        cancelButtonText: '취소',
-    }).then((result) => {
-        if (result.isConfirmed) {
-     	$("#formid").attr("action", "/joinBoss.party").submit();   
-        	
-        }
-    })
+	 let inputId = $("#id").val();
+	  
+	  let inputPw = $("#pw").val();
+	if(inputId =="" || inputPw ==""){
+		
+		  Swal.fire({
+	            background: '#121212',
+	            html: "아이디와 패스워드를 입력해주세요!",
+	            color: '#ededed',
+	            showCancelButton: true,
+	            confirmButtonColor: '#7a07ee',
+	            cancelButtonColor: '#999999',
+	            confirmButtonText: '확인',
+	            cancelButtonText: '취소',
+	        }).then((result) => {
+	            if (result.isConfirmed) {
+	         	Location.reload();  
+	            	
+	            }
+	        })
+		
+	}
+	
+	else{
+   Swal.fire({
+       background: '#121212',
+       html: "넷플릭스 퍼즐장으로 매칭을 시작합니다.<br>매칭이 완료되면 MY퍼즐에서 확인 가능해요!",
+       color: '#ededed',
+       showCancelButton: true,
+       confirmButtonColor: '#7a07ee',
+       cancelButtonColor: '#999999',
+       confirmButtonText: '확인',
+       cancelButtonText: '취소',
+   }).then((result) => {
+       if (result.isConfirmed) {
+    	$("#formid").attr("action", "/joinBoss.party").submit();   
+       	
+       }
+   })
+	}
 }); 
+
     $("#close").on("click", function () {
         Swal.fire({
             background: '#121212',

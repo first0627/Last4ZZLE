@@ -396,12 +396,10 @@ margin-top:55px;
 								<ul class="dropdown-menu"
 									aria-labelledby="navbarDropdownMenuLink"
 									style="background-color: #121212;">
-									<c:choose>
-										<c:when test="${kakao == null}">
+									
 										<li><a class="dropdown-item" id = "mypage" href="/myPage.member"
 											style="color: #EDEDED;">마이페이지</a></li>
-										</c:when>
-										</c:choose>
+										
 									<li><a id="logout" class="dropdown-item"
 										href="/logout.member" style="color: #EDEDED;">로그아웃</a></li>
 								</ul></li>
@@ -434,7 +432,7 @@ margin-top:55px;
 			<div id="main3" align=center>
 				<div class="ttop" style="width:70%; height:80px;">
 				<div class="topl">
-				<img src="/img/d.png" style="width: 70px; height: 70px; margin-top:5px;">
+				<img src="/img/Group25.png" style="width: 70px; height: 70px; margin-top:5px;">
 				</div>
 				<div class="topr" align=left>
 				<div style="height:55%; font-size: 22px; padding-top:5px;">디즈니+ 프리미엄 파티</div>
