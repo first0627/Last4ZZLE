@@ -195,7 +195,7 @@ nav {
 				</button>
 				<div class="collapse navbar-collapse" id="navbarCollapse">
 					<ol class="navbar-nav centered">
-						<li class="nav-item"><a class="nav-link active"
+						<li class="nav-item"><a class="nav-link"
 							aria-current="page" href="/index.jsp">홈</a></li>
 						<li class="nav-item"><a class="nav-link" href="/guide.jsp">가이드</a></li>
 						<c:choose>
