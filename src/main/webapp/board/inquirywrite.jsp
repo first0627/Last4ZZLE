@@ -220,7 +220,7 @@ cursor:pointer;
 
 					</ol>
 					<ol class="nav-pills navbar-nav w-100 justify-content-end centered" id=po>
-						<li class="nav-item"><a class="nav-link" aria-current="page" href="/list.board?cpage=1">고객센터</a></li>
+						<li class="nav-item"><a class="nav-link active" aria-current="page" href="/list.board?cpage=1" style="background-color:inherit;">고객센터</a></li>
 						<c:choose>
 						<c:when test="${loginID != null}">
                         <li class="nav-item dropdown"><a

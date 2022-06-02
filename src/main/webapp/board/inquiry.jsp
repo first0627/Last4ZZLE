@@ -216,7 +216,7 @@ cursor:pointer;
                   <li class="nav-item"><a class="nav-link" href="/contents/main.jsp">포즐피디아</a></li>
 
                </ol>
-               <ol class="nav-pills navbar-nav w-100 justify-content-end centered" id=po>
+              <ol class="nav-pills navbar-nav w-100 justify-content-end centered" id=po>
                   <li class="nav-item"><a class="nav-link active" aria-current="page" href="/list.board?cpage=1" style="background-color:inherit;">고객센터</a></li>
                   <c:choose>
                   <c:when test="${loginID != null}">
@@ -255,8 +255,8 @@ cursor:pointer;
             style="background-color: #121212; padding: 0%; margin-bottom: 4%; font-weight: 700;">
             <div class="container-fluid"
                style="width: 100%; background-color: #121212; padding-top: 100px;">
-               <a class="navbar-brand" href="/list.board?cpage=1"
-                  style="color: #ffffff; font-size: 40px; padding-left: 5%;">고객센터</a>
+					<a class="navbar-brand" href="/list.board?cpage=1"
+						style="color: #ffffff; font-size: 40px; padding-left: 5%;">고객센터</a>
                <div class="collapse navbar-collapse" id="navbarNav"
                   style="margin-left: 3%;">
                   <a class="nav-link active" aria-current="page"
