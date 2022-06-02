@@ -253,7 +253,9 @@ nav {
 							퍼즐을 추가하고<br>OTT를 저렴하게 감상해보세요
 						</div>
 						<div id="main2">커피 한잔값으로 즐기는 컨텐츠의 자유!</div>
-						<button class="bigbtn">서비스 시작하기</button>
+						<button class="bigbtn"
+							onclick="location.href='/puzzle/addpuzzle.jsp' ">서비스
+							시작하기</button>
 					</div>
 				</div>
 			</div>
