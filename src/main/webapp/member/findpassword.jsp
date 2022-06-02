@@ -105,7 +105,6 @@ color: #aaaaaa;
 </style>
 </head>
 <body>
-	<form action="/login.member" method="post">
 		<div id="container">
 			<div id="header" style="padding-bottom:320px;">
 				<div id="hleft">
@@ -138,14 +137,33 @@ color: #aaaaaa;
 				</div>
 			</div>
 		</div>
-	</form>
 	<form action="/kakaoLogin.member" method="post" name=frm>
 		<input type="hidden" name=kakaoId id="kakaoId"> <input
 			type="hidden" name=kakaoNickname id="kakaoNickname">
 	</form>
 </body>
 <script>
-window.onload = function(){
+$("#submit").on("click",function(){
+	
+	// 아이디 검사
+	let id = $("#id").val();
+	let idRegex = /[\w\.\-]+@[\w]+\.[\w]+/;
+	let idResult = idRegex.test(id);
+	if (!idResult) {
+		Swal.fire({
+            background: '#121212',
+            html: "이메일 형식으로 입력해주세요.",
+            color: '#ededed',
+            showCancelButton: false,
+            confirmButtonColor: '#7a07ee',
+            confirmButtonText: '확인'
+       		})
+       			$("#id").val("");
+				$("#id").focus();
+				return false;
+	}
+	
+	
 	Swal.fire({
         background: '#121212',
         html: "미구현 기능입니다.",
@@ -153,11 +171,7 @@ window.onload = function(){
         showCancelButton: false,
         confirmButtonColor: '#7a07ee',
         confirmButtonText: '확인'
-    }).then((result) => {
-        if (result.isConfirmed) {
-            location.href = "/member/login.jsp"
-        }
     })
-}
+})
 </script>
 </html>
